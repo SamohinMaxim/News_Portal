@@ -1,0 +1,44 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+Все публикации
+{% endblock title %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Автор</th>
+                    <th>Заголовок</th>
+                    <th>Превью</th>
+                    <th>Редактирование</th>
+                    <th>Удаление</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{ post.author.user.username }}</td>
+                    <td>{{ post.title }}</td>
+                    <td>{{ post.text }}</td>
+                    <td>{% if post.post_type == 'NW' %}
+                        <a href="{% url 'news_update' post.id %}">изменить</a>
+                        {% else %}
+                        <a href="{% url 'articles_update' post.id %}">изменить</a>
+                        {% endif %}
+                    </td>
+                    <td>{% if post.post_type == 'NW' %}
+                        <a href="{% url 'news_delete' post.id %}">удалить</a>
+                        {% else %}
+                        <a href="{% url 'articles_delete' post.id %}">удалить</a>
+                        {% endif %}
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,23 @@
+{% if is_paginated %}
+    <div class="pagination">
+        {% if page_obj.has_previous %}
+            <a href="?{% if query %}q={{ query }}&{% endif %}
+                {% if author_name %}author={{ author_name }}&{% endif %}
+                {% if date_from %}date_from={{ date_from }}&{% endif %}
+                page={{ page_obj.previous_page_number }}">
+                Предыдущая
+            </a>
+        {% endif %}
+
+        Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}
+
+        {% if page_obj.has_next %}
+            <a href="?{% if query %}q={{ query }}&{% endif %}
+                {% if author_name %}author={{ author_name }}&{% endif %}
+                {% if date_from %}date_from={{ date_from }}&{% endif %}
+                page={{ page_obj.next_page_number }}">
+                Следующая
+            </a>
+        {% endif %}
+    </div>
+{% endif %}

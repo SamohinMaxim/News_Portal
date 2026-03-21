@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="060e72c7-e287-4251-b7ad-ffb741200d02" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/NewsPortal.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyCharmMiscProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sign/edit_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPortal" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPortal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/NewsPaper/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/NewsPaper/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/NewsPaper/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/NewsPaper/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/NewsPaper/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/accounts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/accounts/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/accounts/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/accounts/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/accounts/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/accounts/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/accounts/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/accounts/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/fpages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/fpages/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/fpages/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/fpages/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/fpages/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/fpages/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/fpages/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/news/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/news/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/news/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/news/filters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/news/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/news/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/news/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/news/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/news/templatetags/news_filters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/news/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/news/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/news/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/news/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/static/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/flatpages/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/flatpages/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/flatpages/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/news/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/news/pagination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/news/post_add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/news/post_create_or_update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/news/post_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/news/post_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/news/post_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/news/post_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/news/search.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="3BAOhNt5kdpESKFFKGDGACM0uFT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/pytho/NewsPortal",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-53e2683a6804-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.26094.141" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="060e72c7-e287-4251-b7ad-ffb741200d02" name="Changes" comment="" />
+      <created>1773928527668</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773928527668</updated>
+    </task>
+    <servers />
+  </component>
+</project>

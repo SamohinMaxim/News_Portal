@@ -1,0 +1,100 @@
+{% extends 'flatpages/default.html' %}
+{% load news_filters %}
+
+{% block title %}
+Все публикации
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h4>Поиск постов</h4>
+    <form action="" method="get" class="filter-form">
+        {{ filter.form.as_p }}
+        <input type="submit" value="Применить">
+
+    </form>
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>№ п/п</th>
+                        <th>Заголовок</th>
+                        <th>Превью</th>
+                        <th>ID поста</th>
+                        <th>Дата создания</th>
+                        <th>Тип</th>
+                        <th>Автор</th>
+                        <th>Рейтинг</th>
+                        <th>Рейтинг (emoji)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for post in posts %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>
+                            <a href="{% url 'post_detail' post.id %}">{{ post.title }}</a>
+                        </td>
+                        <td>{{ post.text|truncatechars:10 }}</td>
+                        <td>{{ post.id }}</td>
+                        <td>{{ post.dataCreations|date:'d.m.Y H:i' }}</td>
+                        <td>{{ post.get_post_type_display }}</td>
+                        <td>{{ post.author.user.username }}</td>
+                        <td>{{ post.rating }}</td>
+                        <td>{{ post.rating|emoji }}</td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="9" class="text-center">
+                            Ещё нет ни одного поста!
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Пагинация -->
+<div class="pagination justify-content-center">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <!-- Кнопка назад -->
+            {% if page_obj.has_previous %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ page_obj.previous_page_number }}{% for key, value in request.GET.items %}{% if key != 'page' %}&{{key}}={{value}}{% endif %}{% endfor %}">
+                    Назад
+                </a>
+            </li>
+            {% else %}
+                <li class="page-item disabled"><span class="page-link">Назад</span></li>
+            {% endif %}
+
+            <!-- Текущие страницы -->
+            {% for num in page_obj.paginator.page_range %}
+                {% if page_obj.number == num  %}
+                    <li class="page-item active"><span class="page-link">{{ num }}</span> </li>
+                {% elif num > page_obj.number|add:-3 and num < page_obj.number|add:3 %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ num }}{% for key, value in request.GET.items %}{% if key != 'page' %}&{{key}}={{value}}{% endif %}{% endfor %}">
+                            {{ num }}
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+
+            <!-- Кнопка вперед -->
+            {% if page_obj.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ page_obj.next_page_number }}{% for key, value in request.GET.items %}{% if key != 'page' %}&{{key}}={{value}}{% endif %}{% endfor %}">
+                        Вперед
+                    </a>
+                </li>
+            {% else %}
+                <li class="page-item disabled"><span class="page-link">Вперед</span></li>
+            {% endif %}
+        </ul>
+    </nav>
+</div>
+{% endblock content %}

@@ -1,0 +1,40 @@
+{% extends 'flatpages/default.html' %}
+{% load news_filters %}
+{% block title %}
+Изменение поста
+{% endblock title %}
+
+{% block content %}
+<div class="container mt-5">
+    <h4>Изменение поста</h4>
+    <form action="" method="post">
+        {% csrf_token %}
+
+        <label for="author">Автор:</label><br>
+        <select name="author" id="author">
+            {% for author in authors %}
+            <option value="{{ author.id }}" {% if author.id == post.author_id %}selected{% endif %}>
+                {{ author.user.username }}
+            </option>
+            {% endfor %}
+        </select><br>
+
+        <label for="title">Заголовок:</label><br>
+        <input type="text" id="title" name="title" value="{{ post.title }} required"><br>
+
+        <label for="text">Содержание:</label><br>
+        <textarea name="text" id="text" cols="30" rows="5" required>{{ post.text }}</textarea><br>
+
+        <label for="categories">Категории:</label><br>
+        <select name="categories" id="categories" multiple size="3" required>
+            <option value="{{ category.id }}" {% if category.id in selected_categories %}selected{% endif %}>
+                {{ category.name }}
+            </option>
+                        {% endfor %}
+        </select><br>
+
+        <br>
+        <input type="submit" value="Сохранить изменения" class="btn btn-primary btn-sm">
+    </form>
+</div>
+{% endblock content %}
